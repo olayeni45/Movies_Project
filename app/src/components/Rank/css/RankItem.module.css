@@ -1,0 +1,9 @@
+.container {
+  background-color: #edf2f4;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding:10px 20px;
+  font-size: 17px;
+  font-weight: 500;
+}

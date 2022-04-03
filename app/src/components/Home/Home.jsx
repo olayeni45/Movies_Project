@@ -1,13 +1,15 @@
 import React, { Fragment, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
 import ReorderOutlinedIcon from "@mui/icons-material/ReorderOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import { footerSvg, cloudName } from "../../assets";
 import { Image } from "cloudinary-react";
 import Logo from "../UI/Logo";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const path = "/list";
   const [input, setInput] = useState("");
 
   const handleInputClickHandler = () => {
@@ -32,7 +34,6 @@ const Home = () => {
               />
             </div>
             <div>
-              <HorizontalRuleIcon className={styles.pipe} />
               <button
                 type="button"
                 className={styles["search_button"]}
@@ -44,11 +45,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
+        <div className={styles["btn_container"]}>
           <button
             type="button"
             className={styles["view_button"]}
-            onClick={() => console.log("Clicked")}
+            onClick={() => navigate(path)}
           >
             <ReorderOutlinedIcon />
             View all categories

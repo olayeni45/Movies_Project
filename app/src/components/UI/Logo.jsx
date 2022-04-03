@@ -17,8 +17,8 @@ const Logo = ({ location }) => {
         <Image
           cloudName={cloudName}
           publicId={logoUrl}
-          width="270"
-          height="87"
+          width="200"
+          height="65"
           crop="scale"
         />
       )}
