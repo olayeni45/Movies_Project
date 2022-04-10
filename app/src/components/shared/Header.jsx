@@ -1,11 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import Logo from "../UI/Logo";
 import Back from "../UI/Back";
+import Button from "../UI/Button";
 import styles from "./css/Header.module.css";
 
 const Header = () => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   return (
     <div className={styles.container}>
@@ -15,6 +17,7 @@ const Header = () => {
         </div>
         <div className={styles.navigation}>
           <Back />
+          {pathname === "/rank" && <Button onClick={() => navigate("/vote")} />}
         </div>
       </div>
     </div>

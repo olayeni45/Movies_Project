@@ -19,3 +19,8 @@ export const rankListArray = [
   { name: "Series", total: 3000 },
   { name: "Songs", total: 3500 },
 ];
+
+export const footballersArray = [
+  { rank: "1", name: "Cristiano Ronaldo", votes: 785 },
+  { rank: "2", name: "Lionel Messi", votes: 780 },
+];

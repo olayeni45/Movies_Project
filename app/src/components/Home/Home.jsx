@@ -1,10 +1,10 @@
 import React, { Fragment, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
-import ReorderOutlinedIcon from "@mui/icons-material/ReorderOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import Logo from "../UI/Logo";
 import Footer from "../shared/Footer";
+import Button from "../UI/Button";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -45,14 +45,7 @@ const Home = () => {
         </div>
 
         <div className={styles["btn_container"]}>
-          <button
-            type="button"
-            className={styles["view_button"]}
-            onClick={() => navigate(path)}
-          >
-            <ReorderOutlinedIcon />
-            View all categories
-          </button>
+          <Button onClick={() => navigate(path)} />
         </div>
       </div>
 

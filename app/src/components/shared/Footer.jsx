@@ -22,12 +22,12 @@ const Footer = () => {
         <div className={styles["footer_svg"]}>
           {pathname === "/" ? (
             <Image cloudName={cloudName} publicId={homeFooterSvg} />
-          ) : pathname === "/list" || pathname === "/category" ? (
+          ) : pathname === "/list" || pathname === "/rank" ? (
             <Image
               cloudName={cloudName}
               publicId={listSvg}
               width="1440"
-              height="350"
+              height="320"
               crop="scale"
             />
           ) : null}
