@@ -57,19 +57,3 @@ input {
   justify-content: center;
   margin-top: 10px;
 }
-
-.view_button {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 1px solid #8d99aec7;
-  border-radius: 3px;
-  background-color: #8d99aec7;
-  font-size: 18px;
-  color: #2b2d42;
-  width: 12rem;
-  padding: 8px 7px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
