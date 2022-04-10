@@ -13,7 +13,7 @@ const Card = ({ name, image }) => {
   );
 };
 
-const Vote = (props) => {
+const Vote = () => {
   return (
     <Layout>
       <div className={styles.container}>
@@ -24,12 +24,13 @@ const Vote = (props) => {
               name="Cristiano Ronaldo"
               image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKQcIT2DDVHHrQsJ6fp48iPP7olFQUos0ZA&usqp=CAU"
             />
-            <div className={styles.vs} >vs </div>
+            <div className={styles.vs}>vs</div>
             <Card
               name="Neymar jr"
-              image="https://media.gettyimages.com/photos/neymar-of-paris-saintgermain-celebrates-after-scoring-his-teams-goal-picture-id1066156238?k=20&m=1066156238&s=612x612&w=0&h=BaqqfoAzJWkrB-DqWIkALgCnjP6uTcXLBCwr-JUgzIA="
+              image="https://media.gettyimages.com/photos/neymar-jr-of-brazil-poses-during-the-official-fifa-world-cup-2018-picture-id972647266?k=20&m=972647266&s=612x612&w=0&h=9wYLARZJvMAmKK5rSN02ZsU-1Ug2Qg036UaSrqYEn7E="
             />
           </div>
+          <div className={styles["last_heading"]}>Click on card to vote</div>
         </div>
       </div>
     </Layout>

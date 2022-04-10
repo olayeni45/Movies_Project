@@ -12,3 +12,8 @@ footer {
   width: 100%;
   background-size: cover;
 }
+
+.vote_footer {
+  display: flex;
+  justify-content: flex-end;
+}
