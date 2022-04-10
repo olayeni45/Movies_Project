@@ -1,0 +1,26 @@
+
+.text {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 90%;
+  background-color: white;
+  border-radius: 2px;
+  padding:20px 30px 65px;
+}
+
+.table_heading{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #8D99AE;
+    padding:0 30px;
+    margin-bottom:20px;
+}
+
+.heading{
+    font-size:21px;
+    font-weight: bold;
+}

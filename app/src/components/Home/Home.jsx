@@ -3,9 +3,8 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
 import ReorderOutlinedIcon from "@mui/icons-material/ReorderOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import { footerSvg, cloudName } from "../../assets";
-import { Image } from "cloudinary-react";
 import Logo from "../UI/Logo";
+import Footer from "../shared/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -57,11 +56,7 @@ const Home = () => {
         </div>
       </div>
 
-      <footer>
-        <div className={styles["footer_svg"]}>
-          <Image cloudName={cloudName} publicId={footerSvg}></Image>
-        </div>
-      </footer>
+      <Footer />
     </Fragment>
   );
 };

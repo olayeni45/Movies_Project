@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 import Header from "./Header";
-import RankFooter from "../UI/RankFooter";
+import Footer from "./Footer";
 
 const Layout = (props) => {
   return (
     <Fragment>
       <Header />
       <main>{props.children}</main>
-      <RankFooter />
+      <Footer />
     </Fragment>
   );
 };
